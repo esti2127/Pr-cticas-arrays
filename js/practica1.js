@@ -97,36 +97,35 @@ console.log(suma);
 //Ejercicio 12: Multiplicar todos los elementos del array.
 //Enunciado: Dado un array de números, multiplica cada elemento por un valor específico y devuelve el nuevo array.
 
-let numeros = [1, 2, 3, 4, 5];
+var numeros = [1, 2, 3, 4, 5];
 
-numeros.forEach(num => console.log(num*2));
+var multiplicados = numeros.map( x => x*2);
+
+console.log(multiplicados)
 
 //Ejercicio 13: Filtrar números mayores a un valor.
 //Enunciado: Dado un array de números y un valor, devuelve un nuevo array con los números que sean mayores a ese valor.
 
-function filtrarMayores(array, valor) {
-  return array.filter( elemento => elemento > valor);
-}
+const numeros2 = [3, 7, 8, 25];
 
-let numeros2 = [3, 7, 8, 25];
+const filtrarMayores = numeros2.filter((mayor) => mayor > 23);
 
-console.log(filtrarMayores(numeros2, 23));
+console.log(filtrarMayores);
 
-//Ejercicio 14: Verificar si todos los elementos son mayores a un número. 
+//Ejercicio 14: Verificar si todos los elementos son mayores a un número. //Cambiar y usar every(). 
 //Enunciado: Dado un array de números y un valor, verifica si todos los elementos del array son mayores a ese valor.
 
-let numeros3 = [5, 7, 89, 99];
+const mayores = num => num > 5
 
-const valor = 5;
+const numeros3 = [5, 7, 89, 99];
 
-let mayores = numeros3.filter(num => num > valor);
-
-console.log(mayores);
+console.log(numeros3.every(mayores));
 
 //Ejercicio 15: Obtener el primer elemento que cumple una condición.
 //Enunciado: Dado un array de números y un valor, encuentra el primer número que sea mayor al valor dado.
 
-console.log(numeros3.find(num => num > valor));
+const found = numeros3.find((element) => element > 5);
+console.log(found);
 
 //Ejercicio 16: Imprimir cada elemento del array. 
 //Enunciado: Dado un array de números, recorre el array e imprime cada uno de sus elementos en la consola.
@@ -136,18 +135,21 @@ numeros3.forEach(elemento => console.log(elemento));
 //Ejercicio 17:Crear un array con el doble de cada número
 //Enunciado: Dado un array de números, genera un nuevo array en el que cada número sea el doble de su valor original.
 
-let numeros4 = [34,16,67,88];
+var numeros4 = [34,16,67,88];
 
-numeros4.forEach(num => console.log(num * 2));
+var dobles = numeros4.map(num => num*2);
+
+console.log(dobles);
 
 //Ejercicio 18: Convertir un array de nombres en mayúsculas
 //Enunciado: Dado un array de nombres (strings), genera un nuevo array donde cada nombre esté en mayúsculas.
 
-let nombres = ["laida", "izaro", "alaia"]
+var nombres = ["laida", "izaro", "alaia"]
 
-console.log(nombres[0].toUpperCase())
-console.log(nombres[1].toUpperCase())
-console.log(nombres[2].toUpperCase())
+var capitalize = nombres.map(nombre => nombre.toUpperCase());
+
+console.log(capitalize)
+
 
 
 
