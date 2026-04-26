@@ -97,9 +97,9 @@ console.log(suma);
 //Ejercicio 12: Multiplicar todos los elementos del array.
 //Enunciado: Dado un array de números, multiplica cada elemento por un valor específico y devuelve el nuevo array.
 
-var numeros = [1, 2, 3, 4, 5];
+let numeros = [1, 2, 3, 4, 5];
 
-var multiplicados = numeros.map( x => x*2);
+let multiplicados = numeros.map( x => x*2);
 
 console.log(multiplicados)
 
