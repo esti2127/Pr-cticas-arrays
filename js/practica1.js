@@ -135,18 +135,18 @@ numeros3.forEach(elemento => console.log(elemento));
 //Ejercicio 17:Crear un array con el doble de cada número
 //Enunciado: Dado un array de números, genera un nuevo array en el que cada número sea el doble de su valor original.
 
-var numeros4 = [34,16,67,88];
+let numeros4 = [34,16,67,88];
 
-var dobles = numeros4.map(num => num*2);
+let dobles = numeros4.map(num => num*2);
 
 console.log(dobles);
 
 //Ejercicio 18: Convertir un array de nombres en mayúsculas
 //Enunciado: Dado un array de nombres (strings), genera un nuevo array donde cada nombre esté en mayúsculas.
 
-var nombres = ["laida", "izaro", "alaia"]
+let nombres = ["laida", "izaro", "alaia"]
 
-var capitalize = nombres.map(nombre => nombre.toUpperCase());
+let capitalize = nombres.map(nombre => nombre.toUpperCase());
 
 console.log(capitalize)
 
